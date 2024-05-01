@@ -10,7 +10,7 @@ function App() {
 
     // Fetch Transactions
     useEffect(() => {
-        fetch("https://transactions-api-psi.vercel.app/transactions")
+        fetch("http://localhost:3000/transaction")
             .then(resp => resp.json())
             .then(data => setTransactions(data))
     }, [])
