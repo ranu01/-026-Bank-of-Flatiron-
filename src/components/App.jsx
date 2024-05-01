@@ -10,7 +10,7 @@ function App() {
 
     // Fetch Transactions
     useEffect(() => {
-        fetch("http://localhost:3000/transaction")
+        fetch("https://my-json-server.typicode.com/ranu01/-026-Bank-of-Flatiron-/transaction")
             .then(resp => resp.json())
             .then(data => setTransactions(data))
     }, [])
